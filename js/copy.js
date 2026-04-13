@@ -1,5 +1,5 @@
 document.querySelector("#copy").addEventListener("click", () => {
-    let text = document.querySelector("#text").value;
+    let text = document.querySelector("#text").textContent;
     
     navigator.clipboard.writeText(text);
 
