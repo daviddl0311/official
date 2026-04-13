@@ -149,6 +149,7 @@ header {
 }
 .donar-cuenta-title2 {
     color: #fff;
+    font-size: clamp(2.6rem, 3vw, 4rem);
 }
 .donar-cuenta-text {
     color: #e6e6e6;
