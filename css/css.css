@@ -15,6 +15,10 @@ h1 {
     font-size: clamp(2.6rem, 3.2vw, 9rem);
 }
 
+@view-transition {
+    navigation: auto;
+}
+
 .center {
     display: grid;
     place-content: center;

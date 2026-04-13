@@ -16,6 +16,10 @@ h1 {
     color: #fff;
 }
 
+@view-transition {
+    navigation: auto;
+}
+
 .center {
     display: grid;
     place-content: center;

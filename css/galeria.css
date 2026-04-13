@@ -20,6 +20,10 @@ button {
     font-family: 'Poppins', sans-serif;
 }
 
+@view-transition {
+    navigation: auto;
+}
+
 .center {
     display: grid;
     place-content: center;
