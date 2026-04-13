@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1e3888">
+    <title>ICFS - Donar</title>
+    <link rel="stylesheet" href="css/donar.css">
+    <link rel="preload" href="css/donar.css" as="style">
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8bc6f858e7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="center">
+        <nav class="container navegation">
+            <div>
+                <a href="index.html" class="center">
+                    <img src="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/69cc519942e42e695d4679a2_Logo_ICFS_Mediowe.png" alt="Logo ICFS" class="img_logo">
+                </a>
+            </div>
+            <input type="checkbox" id="menu" class="toggle-menu">
+            <label for="menu" class="btn-menu center">
+                <i class="fa-solid fa-bars" id="burger"></i>
+            </label>
+            <ul class="enlaces">
+                <li class="enlaces-li"><a href="index.html" class="no-active">Inicio</a></li>
+                <li class="enlaces-li"><a href="nosotros.html" class="no-active">Nosotros</a></li>
+                <li class="enlaces-li"><a href="ministerios.html" class="no-active">Ministerios</a></li>
+                <li class="enlaces-li"><a href="servicios.html" class="no-active">Servicios</a></li>
+                <li class="enlaces-li"><a href="galeria.html" class="no-active">Galeria</a></li>
+                <li class="off on">
+                    <button class="btn-donar" onclick="location.href='donar.html'"><i class="fa-regular fa-heart"></i> Donar</button>
+                </li>
+            </ul>
+            <div class="center btn-donar-off">
+                <button class="btn-donar" onclick="location.href='donar.html'"><i class="fa-regular fa-heart"></i> Donar</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="donar center">
+            <article class="container center">
+                <div class="center donar-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <h2 class="text-align donar-title">"Cada uno dé como propuso en su corazón: no con tristeza, ni por necesidad, porque Dios ama al dador alegre."</h2>
+                <h2 class="text-align donar-text">- 2 Corintios 9:7</h2>
+            </article>
+        </section>
+        <section class="donar-cuenta center">
+            <article class="donar-container">
+                <h2 class="donar-cuenta-title text-align">ofrenda en línea</h2>
+                <h1 class="text-align donar-cuenta-title2">Diezmos y ofrendas</h1>
+                <p class="text-align donar-cuenta-text">Con cada ofrenda y diezmo honramos a Dios, sostenemos su obra y bendecimos a la comunidad.</p>
+                <div class="box-donar grid gap3">
+                    <div class="flex gap">
+                        <div class="box-icon-banco center">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                        <h2 class="donar-box-title center">Datos Bancarios</h2>
+                    </div>
+                    <div class="grid gap2 info">
+                        <p class="banco-title">Banco</p>
+                        <p class="banco-text">BCP</p>
+                    </div>
+                    <div class="grid gap2 info">
+                        <p class="banco-title">Titular</p>
+                        <p class="banco-text">Esteban Vasquez</p>
+                    </div>
+                    <div class="flex justify info">
+                        <div class="grid gap2">
+                            <p class="banco-title">N° de Cuenta</p>
+                            <input type="text" class="banco-text" value="191-13839984079" id="text">
+                        </div>
+                        <div class="center">
+                            <div class="copy" id="copy">
+                                <i class="fa-regular fa-copy"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thanks">
+                        <p class="text-align">Gracias por tu generosidad. Cada ofrenda es una semilla de bendición. 🙏</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="center kilo">
+            <article class="donar-container">
+                <h2 class="donar-cuenta-title text-align">solidaridad</h2>
+                <h1 class="text-align donar-cuenta-title2">Kilo de Amor</h1>
+                <p class="text-align donar-cuenta-text">El último domingo de cada mes, compartimos alimentos y artículos básicos para apoyar a familias en necesidad.</p>
+                <div class="kilo-amor flex gap4">
+                    <div class="center">
+                        <div class="icon-kilo-amor center">
+                            <i class="fa-solid fa-box-open"></i>
+                        </div>
+                    </div>
+                    <div class="grid gap"> 
+                        <p class="text-kilo">Arroz, azúcar, aceite, leche, fideos y otros productos son recibidos con amor para distribuirlos a quienes más lo necesitan en nuestra comunidad.</p>
+                        <p class="text-kilo2">Último domingo de cada mes: <span id="dom"></span></p>
+                        <button class="btn-kilo">Sé parte de esta bendición</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer center">
+        <div class="container">
+            <div class="grid grid-template-column4-2 fot-content">
+                <div>
+                    <a href="index.html">
+                        <img src="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/69cc519942e42e695d4679a2_Logo_ICFS_Mediowe.png" alt="Logo ICFS" class="fot-img_logo">
+                    </a>
+                    <p class="footer-text">Un lugar para encontrar esperanza, propósito y comunidad en Cristo.</p>
+                    <div class="flex">
+                        <a href="https://www.facebook.com/icfuentedesalvacion" class="box-media center" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="fot-title">Enlaces</h2>
+
+                    <ul class="grid fot-box">
+                        <li><a class="fot-enlace" href="nosotros.html">Nosotros</a></li>
+                        <li><a class="fot-enlace" href="ministerios.html">Ministerios</a></li=>
+                        <li><a class="fot-enlace" href="servicios.html">Servicios</a></li>
+                        <li><a class="fot-enlace" href="publicaciones.html">Publicaciones</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="fot-title">Horarios</h2>
+                    
+                    <ul class="grid fot-box">
+                        <li><p class="fot-enlace"><strong class="fot-strong">Domingo</strong>: 5:00 P.M.</p></li>
+                        <li><p class="fot-enlace"><strong class="fot-strong">Sábado</strong>: 6:00 P.M.</p></li>
+                        <li><p class="fot-enlace"><strong class="fot-strong">Jueves</strong>: 7:30 P.M.</p></li>
+                        <li><p class="fot-enlace"><strong class="fot-strong">Martes</strong>: 7:30 P.M.</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="fot-title">Contacto</h2>
+
+                    <div class="grid fot-box">
+                        <div class="flex">
+                            <div class="center icon-fot">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <p class="fot-enlace">Av. Angelica Gamarra 2350, S.M.P.</p>
+                        </div>
+                        <div class="flex">
+                            <div class="center icon-fot">
+                                <i class="fa-solid fa-envelope"></i> 
+                            </div>
+                            <a href="" class="fot-enlace">Fuentedesalvacion@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="derechos">
+                <p>© <span id="year"></span> Iglesia Cristiana Fuente de Salvación. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/copy.js"></script>
+    <script src="js/getDate.js"></script>
+    <script src="js/footerYear.js"></script>
+</body>
+</html>

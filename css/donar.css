@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, black, #1e3888);
@@ -13,7 +14,6 @@ a {
 }
 h1 {
     font-size: clamp(2.6rem, 3vw, 4rem);
-    color: #fff;
 }
 
 .center {
@@ -32,6 +32,9 @@ h1 {
 .off {
     display: none;
 }
+.justify {
+    justify-content: space-between;
+}
 .text-align {
     text-align: center;
 }
@@ -46,7 +49,9 @@ h1 {
 header {
     top: 0;
     z-index: 999;
+    display: grid;
     position: sticky;
+    place-content: center;
     padding-block: 1.2rem;
     animation: adjust-header linear both;
     animation-timeline: scroll();
@@ -108,88 +113,169 @@ header {
     display: none;
 }
 
-/* MINISTERIOS */
-.ministerios {
+/* DONAR */
+.donar {
+    padding-block: 5rem;
+    background-color: #111a368a;
+}
+.donar-title {
+    color: #fff;
+    width: clamp(300px, 70vw, 900px);
+    margin-top: 1rem;
+    font-size: clamp(15px, 3vw, 23px);
+}
+.donar-text {
+    color: #60cbff;
+    font-size: clamp(14px, 3vw, 15px);
+    text-transform: uppercase;
+    margin-top: 1rem;
+    font-style: italic;
+}
+.donar-container {
+    width: clamp(300px, 70vw, 600px);
+}
+.donar-icon {
+    color: #60cbff;
+    font-size: 30px;
+}
+
+/* DONAR CUENTA */
+.donar-cuenta {
     padding-block: 5rem;
 }
-.ministerios-title {
+.donar-cuenta-title {
     font-size: clamp(13px, 3vw, 15px);
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #60cbff;
     font-weight: 500;
 }
-.ministerios-text {
-    font-size: clamp(14px, 3vw, 16px);
+.donar-cuenta-title2 {
+    color: #fff;
+}
+.donar-cuenta-text {
     color: #e6e6e6;
+    font-size: clamp(14px, 3vw, 16px);
 }
-.min {
-    background-color: #fff;
-    padding-block: 5rem;
-}
-.my-ministerio {
-    cursor: default;
-    overflow: hidden;
+
+/* BOX DONAR */
+.box-donar {
+    margin-top: 4rem;
     border-radius: 10px;
-    box-shadow: 0 0 10px #ccccccde;
+    background-color: #081231;
+    padding: 2rem;
+    border: 1px solid #fdfdfd23;
     transition: all .3s ease-in-out;
     &:hover {
-        transform: translateY(-3%);
-        .img-min {
-            scale: 1.1;
-        }
-        .icon-mar {
-            margin-left: .6rem;
-        }
+        box-shadow: 0 0 30px #409bcf;
     }
 }
-.img-min {
-    width: 100%;
-    height: 100%;
-    transition: all .3s ease-in-out;
+.box-icon-banco {
+    color:#fff;
+    font-size: 18px;
+    color: #7d9eff;
+    padding: .8rem .8rem;
+    border-radius: 10px;
+    background-color: #60667731;
 }
-.info-ministerio-img {
-    height: 320px;
-    overflow: hidden;
-}
-.info-ministerio-title {
-    gap: .7rem;
-}
-.icon-min {
-    background-color: #1e3988;
+.donar-box-title {
     color: #fff;
-    width: 20px;
-    font-size: 19px;
-    padding: .8rem 1.4rem;
+    font-size: clamp(15px, 3vw, 17px);
+}
+.info {
+    background-color: #60667731;
+    padding: 1rem;
     border-radius: 10px;
 }
-.info-ministerio {
-    gap: 1rem;
-    padding: 1.5rem;
+.copy {
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: .3rem .7rem;
+    transition: all .3s ease-in-out;
+    &:hover {
+        color: #60cbff;
+        background-color: #41548a5b;
+    }
 }
-.title-min {
-    font-size: clamp(18px, 3vw, 22px);
+.gap {
+    gap: .8rem;
 }
-.text-min {
-    font-size: clamp(14px, 3vw, 15px);
-    color: #2b2b2b;
+.gap2 {
+    gap: .1rem;
 }
-.border {
-    border-top: 1px solid #0c1a4434;
+.gap3 {
+    gap: 1.2rem;
+}
+.banco-title {
+    color: #d8d6d6;
+    font-size: clamp(12px, 3vw, 13px);
+}
+.banco-text {
+    color: #fff;
+    font-size: clamp(13px, 3vw, 14px);
+    font-weight: 600;
+}
+.thanks {
+    color: #fff;
+    font-size: 12px;
+    border-top: 1px solid #fdfdfd23;
     padding-top: 1rem;
 }
-.grid-template-column3 {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.2rem;
+
+input[type="text"] {
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
 }
-.enlace-info {
-    font-size: 15px;
-    width: 100%;
-    color: #4ea8de;
+
+/* KILO */
+.kilo {
+    padding-block: 5rem;
+    background-color: #1e30668a;
 }
-.icon-mar {
-    margin-left: .4rem;
+.kilo-amor {
+    margin-top: 4rem;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #fdfdfd23;
+    background-color: #081231;
     transition: all .3s ease-in-out;
+    &:hover {
+        box-shadow: 0 0 30px #409bcf;
+    }
+}
+.icon-kilo-amor {
+    color: #7d9eff;
+    padding: .8rem .7rem;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: #24283396;
+}
+.text-kilo {
+    font-size: clamp(13px, 3vw, 14px);
+    color: #fff;
+}
+.text-kilo2 {
+    font-size: clamp(13px, 3vw, 14px);
+    color: #60cbff;
+}
+.gap4 {
+    gap: 1.8rem;
+}
+.btn-kilo {
+    font-size: clamp(14px, 3vw, 15px);
+    color: #fff;
+    padding: .6rem 1.2rem;
+    width: fit-content;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #409bcf;
+    cursor: pointer; 
+    transition: all .3s ease-in-out;
+    &:hover {
+        background-color: #409bcfdc;
+    }
 }
 
 /* FOOTER */
@@ -261,24 +347,9 @@ header {
     border-top: 1px solid #fdfdfd23;
 }
 
-@media (width < 1550px) {
-    /* MINISTERIOS */
-    .grid-template-column3 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .img-min {
-        object-fit: cover;
-    }
-    .info-ministerio-img {
-        height: 200px;
-        overflow: hidden;
-    }
-}
-
 @media (width < 1450px) {
     /* MENU */
-    .toogle-menu, 
-    .btn-menu {
+    .toogle-menu, .btn-menu {
         display: block;
     }
     #menu:checked ~ .enlaces {
@@ -309,16 +380,8 @@ header {
     .on {
         display: block;
     }
-    .active, 
-    .no-active {
+    .active, .no-active {
         width: 100%;
-    }
-}
-
-@media (width < 1200px) {
-    /* MINISTERIOS */
-    .grid-template-column3 {
-        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -326,4 +389,11 @@ header {
     .img_logo {
         width: 7rem;
     }
+
+    .kilo-amor {
+        flex-direction: column;    
+    }   
+}
+
+@media (width < 500px) {
 }

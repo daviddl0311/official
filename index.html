@@ -20,7 +20,7 @@
             </div>
             <input type="checkbox" id="menu" class="toggle-menu">
             <label for="menu" class="btn-menu center">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" id="burger"></i>
             </label>
             <ul class="enlaces">
                 <li class="enlaces-li"><a href="index.html" class="active">Inicio</a></li>
@@ -29,11 +29,11 @@
                 <li class="enlaces-li"><a href="servicios.html" class="no-active">Servicios</a></li>
                 <li class="enlaces-li"><a href="galeria.html" class="no-active">Galeria</a></li>
                 <li class="off on">
-                    <button class="btn-donar">Donar</button>
+                    <button class="btn-donar" onclick="location.href='donar.html'"><i class="fa-regular fa-heart"></i> Donar</button>
                 </li>
             </ul>
             <div class="center btn-donar-off">
-                <button class="btn-donar">Donar</button>
+                <button class="btn-donar" onclick="location.href='donar.html'"><i class="fa-regular fa-heart"></i> Donar</button>
             </div>
         </nav>
     </header>
@@ -184,13 +184,13 @@
                 <h2 class="color-title3">Momentos especiales</h2>
                 <div class="grid grid-template-column3 cards2">
                     <div class="box-img-gal">
-                        <img src="img/IMG_2790.jpg" alt="" class="img-galeria">
+                        <img src="img/galeria/jovenes3.jpeg" alt="" class="img-galeria">
                     </div>
                     <div class="box-img-gal">
-                        <img src="img/IMG_8596.jpg" alt="" class="img-galeria">
+                        <img src="img/galeria/faena.jpeg" alt="" class="img-galeria">
                     </div>
                     <div class="box-img-gal">
-                        <img src="img/IMG_8845.jpg" alt="" class="img-galeria">
+                        <img src="img/galeria/jovenes5.jpeg" alt="" class="img-galeria">
                     </div>
                 </div>
                 <div class="center center2">
@@ -266,9 +266,11 @@
                 </div>
             </div>
             <div class="derechos">
-                <p>© 2026 Iglesia Cristiana Fuente de Salvación. Todos los derechos reservados.</p>
+                <p>© <span id="year"></span> Iglesia Cristiana Fuente de Salvación. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
+
+    <script src="js/footerYear.js"></script>
 </body>
 </html>

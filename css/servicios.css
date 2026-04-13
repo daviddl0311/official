@@ -87,10 +87,16 @@ header {
 .btn-donar {
     cursor: pointer;
     width: 100%;
-    padding: .6rem .8rem;
+    background-color: #f9c80e;
+    color: #1e3888;
+    font-weight: 600;
+    padding: .6rem 1rem;
     border-radius: 10px;
     font-size: clamp(14px, 3vw, 15px);
     font-family: 'Poppins', sans-serif;
+}
+.fa-heart {
+    margin-right: .3rem;
 }
 
 /* BAR - MENU */
