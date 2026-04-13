@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICFS - Galeria</title>
+    <link rel="stylesheet" href="css/galeria.css">
+    <link rel="preload" href="css/galeria.css" as="style">
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8bc6f858e7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="center">
+        <nav class="container navegation">
+            <div>
+                <a href="index.html" class="center">
+                    <img src="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/69cc519942e42e695d4679a2_Logo_ICFS_Mediowe.png" alt="Logo ICFS" class="img_logo">
+                </a>
+            </div>
+            <input type="checkbox" id="menu" class="toggle-menu">
+            <label for="menu" class="btn-menu center">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="enlaces">
+                <li class="enlaces-li"><a href="index.html" class="no-active">Inicio</a></li>
+                <li class="enlaces-li"><a href="nosotros.html" class="no-active">Nosotros</a></li>
+                <li class="enlaces-li"><a href="ministerios.html" class="no-active">Ministerios</a></li>
+                <li class="enlaces-li"><a href="servicios.html" class="no-active">Servicios</a></li>
+                <li class="enlaces-li"><a href="galeria.html" class="active">Galeria</a></li>
+                <li class="off on">
+                    <button class="btn-donar">Donar</button>
+                </li>
+            </ul>
+            <div class="center btn-donar-off">
+                <button class="btn-donar">Donar</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="galeria center">
+            <article class="container">
+                <h2 class="galeria-title text-align">galeria</h2>
+                <h1 class="text-align">Momentos especiales</h1>
+                <p class="text-align galeria-text">Revive los momentos más especiales de nuestra comunidad.</p>
+            </article>
+        </section>
+        <section class="galeria-img center">
+            <article class="container">
+                <div class="flex justify-content flex-wrap">
+                    <button class="btn-active" id="btnAll">Todos</button>
+                    <button class="btn" id="btnCultos">Cultos</button>
+                    <button class="btn" id="btnJovenes">Jóvenes</button>
+                    <button class="btn" id="btnEventos">Eventos</button>
+                    <button class="btn" id="btnCom">Comunidad</button>
+                    <button class="btn" id="btnMusic">Música</button>
+                </div>
+                <div class="grid grid-template-column3 box-galeria" id="content">
+                    <!-- <div class="box-img div1" id="Eventos">
+                        <img src="img/IMG_2790.jpg" alt="Aniversario 27°" data-evento="Eventos" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">Aniversario 27°</h2>
+                            <p class="gal-text">Eventos</p>
+                        </div>
+                    </div>
+                    <div class="box-img div3" id="Eventos">
+                        <img src="img/IMG_8596.jpg" alt="Aniversario 27°" data-evento="Eventos" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">Aniversario 27°</h2>
+                            <p class="gal-text">Eventos</p>
+                        </div>
+                    </div>
+                    <div class="box-img div4" id="Eventos">
+                        <img src="img/IMG_8810.jpeg" alt="Aniversario 27°" data-evento="Eventos" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">Aniversario 27°</h2>
+                            <p class="gal-text">Eventos</p>
+                        </div>
+                    </div> -->
+                    <div class="box-img div5" id="Comunidad">
+                        <img src="img/galeria/faena.jpeg" alt="Faena 2026" data-evento="Comunidad" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">Faena 2026</h2>
+                            <p class="gal-text">Comunidad</p>
+                        </div>
+                    </div>
+                    <div class="box-img div6" id="Comunidad">
+                        <img src="img/galeria/faena3.jpg" alt="Faena 2026" data-evento="Comunidad" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">Faena 2026</h2>
+                            <p class="gal-text">Comunidad</p>
+                        </div>
+                    </div>
+                    <div class="box-img div6" id="Comunidad">
+                        <img src="img/galeria/faena4.jpeg" alt="Faena 2026" data-evento="Comunidad" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">Faena 2026</h2>
+                            <p class="gal-text">Comunidad</p>
+                        </div>
+                    </div>
+                    <div class="box-img div6" id="Comunidad">
+                        <img src="img/galeria/faena5.jpeg" alt="Faena 2026" data-evento="Comunidad" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">Faena 2026</h2>
+                            <p class="gal-text">Comunidad</p>
+                        </div>
+                    </div>
+                    <div class="box-img div3" id="Eventos">
+                        <img src="img/galeria/familia.jpeg" alt="Familia y Matrimonio" data-evento="Eventos" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">Familia y Matrimonio</h2>
+                            <p class="gal-text">Eventos</p>
+                        </div>
+                    </div>
+                    <div class="box-img div4" id="Eventos">
+                        <img src="img/galeria/familia2.jpeg" alt="Familia y Matrimonio" data-evento="Eventos" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">Familia y Matrimonio</h2>
+                            <p class="gal-text">Eventos</p>
+                        </div>
+                    </div>
+                    <div class="box-img div4" id="Eventos">
+                        <img src="img/galeria/familia3.jpeg" alt="Familia y Matrimonio" data-evento="Eventos" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">Familia y Matrimonio</h2>
+                            <p class="gal-text">Eventos</p>
+                        </div>
+                    </div>
+                    <div class="box-img div4" id="Eventos">
+                        <img src="img/galeria/familia4.jpeg" alt="Familia y Matrimonio" data-evento="Eventos" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">Familia y Matrimonio</h2>
+                            <p class="gal-text">Eventos</p>
+                        </div>
+                    </div>
+                    <div class="box-img div4" id="Eventos">
+                        <img src="img/galeria/familia5.jpeg" alt="Familia y Matrimonio" data-evento="Eventos" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">Familia y Matrimonio</h2>
+                            <p class="gal-text">Eventos</p>
+                        </div>
+                    </div>
+                    <div class="box-img div4" id="Eventos">
+                        <img src="img/galeria/familia6.jpeg" alt="Familia y Matrimonio" data-evento="Eventos" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">Familia y Matrimonio</h2>
+                            <p class="gal-text">Eventos</p>
+                        </div>
+                    </div>
+                    <div class="box-img div4" id="Eventos">
+                        <img src="img/galeria/familia7.jpeg" alt="Familia y Matrimonio" data-evento="Eventos" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">Familia y Matrimonio</h2>
+                            <p class="gal-text">Eventos</p>
+                        </div>
+                    </div>
+                    <div class="box-img div4" id="Jovenes">
+                        <img src="img/galeria/jovenes2.jpeg" alt="JACSD" data-evento="Jovenes" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">JACSD</h2>
+                            <p class="gal-text">Jovenes</p>
+                        </div>
+                    </div>
+                    <div class="box-img div4" id="Jovenes">
+                        <img src="img/galeria/jovenes4.jpeg" alt="JACSD" data-evento="Jovenes" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">JACSD</h2>
+                            <p class="gal-text">Jovenes</p>
+                        </div>
+                    </div>
+                    <div class="box-img div4" id="Jovenes">
+                        <img src="img/galeria/jovenes5.jpeg" alt="JACSD" data-evento="Jovenes" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">JACSD</h2>
+                            <p class="gal-text">Jovenes</p>
+                        </div>
+                    </div>
+                    <div class="box-img div4" id="Jovenes">
+                        <img src="img/galeria/jovenes6.jpeg" alt="JACSD" data-evento="Jovenes" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">JACSD</h2>
+                            <p class="gal-text">Jovenes</p>
+                        </div>
+                    </div>
+                    <div class="box-img div4" id="Jovenes">
+                        <img src="img/galeria/jovenes7.jpeg" alt="JACSD" data-evento="Jovenes" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">JACSD</h2>
+                            <p class="gal-text">Jovenes</p>
+                        </div>
+                    </div>
+                    <div class="box-img div4" id="Jovenes">
+                        <img src="img/galeria/jovenes8.jpeg" alt="JACSD" data-evento="Jovenes" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">JACSD</h2>
+                            <p class="gal-text">Jovenes</p>
+                        </div>
+                    </div>
+                    <div class="box-img div4" id="Jovenes">
+                        <img src="img/galeria/jovenes9.jpeg" alt="JACSD" data-evento="Jovenes" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">JACSD</h2>
+                            <p class="gal-text">Jovenes</p>
+                        </div>
+                    </div>
+                    <div class="box-img div4" id="Jovenes">
+                        <img src="img/galeria/jovenes.jpeg" alt="JACSD" data-evento="Jovenes" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">JACSD</h2>
+                            <p class="gal-text">Jovenes</p>
+                        </div>
+                    </div>
+                    <div class="box-img div4" id="Jovenes">
+                        <img src="img/galeria/jovenes3.jpeg" alt="JACSD" data-evento="Jovenes" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">JACSD</h2>
+                            <p class="gal-text">Jovenes</p>
+                        </div>
+                    </div>
+                    <div class="box-img div4" id="Jovenes">
+                        <img src="img/galeria/jovenes10.jpeg" alt="JACSD" data-evento="Jovenes" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">JACSD</h2>
+                            <p class="gal-text">Jovenes</p>
+                        </div>
+                    </div>
+                    <div class="box-img div4" id="Jovenes">
+                        <img src="img/galeria/jovenes11.jpeg" alt="JACSD" data-evento="Jovenes" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">JACSD</h2>
+                            <p class="gal-text">Jovenes</p>
+                        </div>
+                    </div>
+                    <div class="box-img div4" id="Jovenes">
+                        <img src="img/galeria/jovenes12.jpeg" alt="JACSD" data-evento="Jovenes" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">JACSD</h2>
+                            <p class="gal-text">Jovenes</p>
+                        </div>
+                    </div>
+                    <!-- <div class="box-img div8" id="Cultos">
+                        <img src="img/IMG_2790.jpg" alt="Aniversario 27°" data-evento="Cultos" class="img-galeria">
+                        <div class="box-info">
+                            <h2 class="gal-title">Aniversario 27°</h2>
+                            <p class="gal-text">Cultos</p>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="message">
+                    <div class="grid box-message">
+                        <div class="center">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                        <h2 class="text-align me-title">¡Ups! Aún no tenemos imágenes para mostrar.</h2>
+                        <p class="text-align me-text">¡Vuelve pronto para descubrirlas!</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <div class="box-view-img center">
+        <div class="container-img">
+            <button id="left"><i class="fa-solid fa-angle-left"></i></button>
+            <div class="content-img">
+                <img src="" alt="" id="img-view">
+                <div class="text-align box-img-view-info">
+                    <h2 class="gal-title" id="img-view-title"></h2>
+                    <p class="gal-text" id="img-view-text"></p>
+                </div>
+            </div>
+            <button id="right"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+        <button id="close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <footer class="footer center">
+        <div class="container">
+            <div class="grid grid-template-column4-2 fot-content">
+                <div>
+                    <a href="index.html">
+                        <img src="https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/69cc519942e42e695d4679a2_Logo_ICFS_Mediowe.png" alt="Logo ICFS" class="fot-img_logo">
+                    </a>
+                    <p class="footer-text">Un lugar para encontrar esperanza, propósito y comunidad en Cristo.</p>
+                    <div class="flex">
+                        <a href="https://www.facebook.com/icfuentedesalvacion" class="box-media center" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="fot-title">Enlaces</h2>
+
+                    <ul class="grid fot-box">
+                        <li><a class="fot-enlace" href="nosotros.html">Nosotros</a></li>
+                        <li><a class="fot-enlace" href="ministerios.html">Ministerios</a></li=>
+                        <li><a class="fot-enlace" href="servicios.html">Servicios</a></li>
+                        <li><a class="fot-enlace" href="publicaciones.html">Publicaciones</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="fot-title">Horarios</h2>
+                    
+                    <ul class="grid fot-box">
+                        <li><p class="fot-enlace"><strong class="fot-strong">Domingo</strong>: 5:00 P.M.</p></li>
+                        <li><p class="fot-enlace"><strong class="fot-strong">Sábado</strong>: 6:00 P.M.</p></li>
+                        <li><p class="fot-enlace"><strong class="fot-strong">Jueves</strong>: 7:30 P.M.</p></li>
+                        <li><p class="fot-enlace"><strong class="fot-strong">Martes</strong>: 7:30 P.M.</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="fot-title">Contacto</h2>
+
+                    <div class="grid fot-box">
+                        <div class="flex">
+                            <div class="center icon-fot">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <p class="fot-enlace">Av. Angelica Gamarra 2350, S.M.P.</p>
+                        </div>
+                        <div class="flex">
+                            <div class="center icon-fot">
+                                <i class="fa-solid fa-envelope"></i> 
+                            </div>
+                            <a href="" class="fot-enlace">Fuentedesalvacion@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="derechos">
+                <p>© 2026 Iglesia Cristiana Fuente de Salvación. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
