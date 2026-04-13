@@ -429,21 +429,21 @@ header {
     }
 
     #img-view {
-        width: 350px;
+        width: 450px;
         height: 100%;
         object-fit: cover;
     }
     .content-img {
-        height: 260px;
+        height: 300px;
     }
 
     #left {
         position: absolute;
-        left: -40%;
+        left: -50%;
     }
     #right {
         position: absolute;
-        right: -40%;
+        right: -50%;
     }
     #close {
         bottom: -60%;
