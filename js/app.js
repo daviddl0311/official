@@ -76,7 +76,6 @@ btnMusic.addEventListener("click", () => {
 
 // Box Image
 let box = document.querySelector(".box-view-img");
-box.style.display = "none";
 
 // View Image
 let imgAll = document.querySelectorAll(".img-galeria");
