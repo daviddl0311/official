@@ -44,7 +44,7 @@ h1 {
     100% {
         background-color: #152861;
     }
-} 
+}
 
 /* HEADER */
 header {
@@ -117,7 +117,6 @@ header {
 /* DONAR */
 .donar {
     padding-block: 5rem;
-    background-color: #111a368a;
 }
 .donar-title {
     color: #fff;
@@ -175,7 +174,6 @@ header {
 .box-icon-banco {
     color:#fff;
     font-size: 18px;
-    color: #7d9eff;
     padding: .8rem .8rem;
     border-radius: 10px;
     background-color: #60667731;
@@ -237,7 +235,6 @@ input[type="text"] {
 /* KILO */
 .kilo {
     padding-block: 5rem;
-    background-color: #1e30668a;
 }
 .kilo-amor {
     margin-top: 4rem;
@@ -251,11 +248,11 @@ input[type="text"] {
     }
 }
 .icon-kilo-amor {
-    color: #7d9eff;
+    color: #fff;
     padding: .8rem .7rem;
     font-size: 30px;
     border-radius: 10px;
-    background-color: #24283396;
+    background-color: #60667731;
 }
 .text-kilo {
     font-size: clamp(13px, 3vw, 14px);
@@ -272,17 +269,17 @@ input[type="text"] {
     gap: .3rem;
 }
 .btn-kilo {
-    font-size: clamp(14px, 3vw, 15px);
+    font-size: clamp(13px, 3vw, 15px);
     color: #fff;
-    padding: .6rem 1.2rem;
+    padding: .6rem 1.5rem;
     width: fit-content;
     border-radius: 10px;
     font-family: 'Poppins', sans-serif;
-    background-color: #409bcf;
+    background-color: #4ea8de;
     cursor: pointer; 
     transition: all .3s ease-in-out;
     &:hover {
-        background-color: #409bcfdc;
+        background-color: #4ea8dedc;
     }
 }
 
@@ -398,6 +395,9 @@ input[type="text"] {
         width: 7rem;
     }
 
+    .btn-kilo {
+        width: 100%;
+    }
     .kilo-amor {
         flex-direction: column;    
     }
