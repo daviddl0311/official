@@ -119,7 +119,7 @@ header {
 }
 .hero::before {
     content: "";
-    background: linear-gradient(to left, black, #1e3888);
+    background: linear-gradient(-120deg, black, #1e3888);
     opacity: .7;
     position: absolute;
     z-index: 0;

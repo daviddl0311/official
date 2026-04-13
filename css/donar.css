@@ -32,9 +32,6 @@ h1 {
 .off {
     display: none;
 }
-.justify {
-    justify-content: space-between;
-}
 .text-align {
     text-align: center;
 }
@@ -187,6 +184,9 @@ header {
     padding: 1rem;
     border-radius: 10px;
 }
+.flex-justify {
+    justify-content: space-between;
+}
 .copy {
     color: #fff;
     font-size: 18px;
@@ -262,6 +262,9 @@ input[type="text"] {
 }
 .gap4 {
     gap: 1.8rem;
+}
+.gap5 {
+    gap: .3rem;
 }
 .btn-kilo {
     font-size: clamp(14px, 3vw, 15px);
@@ -392,8 +395,11 @@ input[type="text"] {
 
     .kilo-amor {
         flex-direction: column;    
+    }
+    .flex-direction {
+        flex-direction: column;
+    }
+    .gap5 {
+        gap: 0;
     }   
-}
-
-@media (width < 500px) {
 }
