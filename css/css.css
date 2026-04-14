@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-120deg, black, #1e3888);
 }
 a {
     text-decoration: none;
@@ -164,7 +165,7 @@ header {
 .btn-conocenos {
     cursor: pointer;
     padding: .6rem 2rem;
-    font-size: clamp(14px, 3vw, 16px);
+    font-size: clamp(15px, 3vw, 16px);
     font-family: 'Poppins', sans-serif;
     color: #fff;
     font-weight: 500;
@@ -219,9 +220,9 @@ header {
 }
 .btn-principal {
     font-family: 'Poppins', sans-serif;
-    font-size: clamp(14px, 3vw, 16px);
+    font-size: clamp(15px, 3vw, 16px);
     cursor: pointer;
-    padding: .6rem 2rem;
+    padding: .7rem 2rem;
     border-radius: 10px;
     background-color: #2e69fe;
     color: #fff;
@@ -246,7 +247,7 @@ header {
 /* MINISTERIOS */
 .ministerios {
     padding-block: 5rem;
-    background-color: #1e3888;
+    /* background-color: #1e3888; */
 }
 .color-title4 {
     color: #60cbff;
@@ -312,9 +313,9 @@ header {
 }
 .btn-secundario {
     font-family: 'Poppins', sans-serif;
-    font-size: clamp(14px, 3vw, 16px);
+    font-size: clamp(15px, 3vw, 16px);
     cursor: pointer;
-    padding: .6rem 2rem;
+    padding: .7rem 2rem;
     border-radius: 10px;
     background-color: #4ea8de;
     color: #fff;
@@ -334,7 +335,8 @@ header {
 
 /* SERVICIOS */
 .servicios {
-    margin-block: 5rem;
+    padding-block: 5rem;
+    background-color: #fff;
 }
 .servicio-text {
     font-size: clamp(14px, 3vw, 16px);
@@ -402,7 +404,7 @@ header {
 /* GALERIA */
 .galeria {
     padding-block: 5rem;
-    background-color: #1e3888;
+    /* background-color: #1e3888; */
 }
 .grid-template-column3 {
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
@@ -463,9 +465,9 @@ header {
 }
 .btn-secundario2 {
     font-family: 'Poppins', sans-serif;
-    font-size: clamp(14px, 3vw, 16px);
+    font-size: clamp(15px, 3vw, 16px);
     cursor: pointer;
-    padding: .6rem 2rem;
+    padding: .7rem 2rem;
     border-radius: 10px;
     border: 2px solid #60caff6e;
     background-color: transparent;
@@ -619,6 +621,9 @@ header {
     /* GALERIA */
     .grid-template-column3 {
         gap: 2.3rem;
+    }
+    .box-img-gal  {
+        height: 230px;
     }
 
     /* LISTO */
