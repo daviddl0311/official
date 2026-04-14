@@ -96,7 +96,7 @@ header {
     font-weight: 600;
     padding: .6rem 1rem;
     border-radius: 10px;
-    font-size: clamp(14px, 3vw, 15px);
+    font-size: clamp(15px, 3vw, 16px);
     font-family: 'Poppins', sans-serif;
 }
 .fa-heart {

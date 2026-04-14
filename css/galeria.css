@@ -107,7 +107,7 @@ header {
     font-weight: 600;
     padding: .6rem 1rem;
     border-radius: 10px;
-    font-size: clamp(14px, 3vw, 15px);
+    font-size: clamp(15px, 3vw, 16px);
     font-family: 'Poppins', sans-serif;
 }
 .fa-heart {
@@ -192,16 +192,6 @@ header {
         }
     }
 }
-/* .box-img::after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    inset: 0;
-    transition: all .3s ease-in-out;
-}
-.box-img:hover::after {
-    background-color: #15286154;
-} */
 .box-info {
     z-index: 99;
     padding: 1.2rem;
