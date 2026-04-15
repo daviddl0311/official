@@ -117,14 +117,14 @@ header {
 /* hero */
 .hero {
     height: 100vh;
-    background: url(https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/68fe9538ca8288179aa39d91_4df877bdfe25339a16d8dec2a23a2614_new-inicio.avif) no-repeat;
+    background: url(https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/69df1503818ce18f0a63025b_4012.webp) no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
 }
 .hero::before {
     content: "";
-    background: linear-gradient(-120deg, black, #1e3888);
+    background: linear-gradient(-120deg, black, #0b2a86);
     opacity: .7;
     position: absolute;
     z-index: 0;
