@@ -295,7 +295,7 @@ input[type="text"] {
     background-color: #0c1a44;
 }
 .grid-template-column4-2 {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 .footer-text {
@@ -363,7 +363,6 @@ input[type="text"] {
     #menu:checked ~ .enlaces {
         right: 0;
     }
-
     /* HEADER */
     header {
         position: fixed;
@@ -391,6 +390,10 @@ input[type="text"] {
     .active, .no-active {
         width: 100%;
     }
+    /* FOOTER */
+    .grid-template-column4-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (width < 900px) {
@@ -409,5 +412,9 @@ input[type="text"] {
     }
     .gap5 {
         gap: 0;
+    }
+    /* FOOTER */
+    .grid-template-column4-2 {
+        grid-template-columns: repeat(1, 1fr);
     }   
 }

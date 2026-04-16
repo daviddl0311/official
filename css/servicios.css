@@ -260,7 +260,7 @@ header {
     background-color: #0c1a44;
 }
 .grid-template-column4-2 {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 .footer-text {
@@ -329,7 +329,6 @@ header {
     #menu:checked ~ .enlaces {
         right: 0;
     }
-
     /* HEADER */
     header {
         position: fixed;
@@ -358,10 +357,13 @@ header {
     .no-active {
         width: 100%;
     }
-
     /* SERVICIOS */
     .column-items {
         grid-template-columns: repeat(1, 1fr);
+    }
+    /* FOOTER */
+    .grid-template-column4-2 {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -369,7 +371,6 @@ header {
     .img_logo {
         width: 7rem;
     }
-
     .item-date {
         flex-direction: column;
     }
@@ -378,5 +379,9 @@ header {
     }
     .gap {
         gap: .3rem;
+    }
+    /* FOOTER */
+    .grid-template-column4-2 {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
