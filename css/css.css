@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(-120deg, black, #1e3888);
@@ -15,11 +14,9 @@ a {
 h1 {
     font-size: clamp(2.6rem, 3.2vw, 9rem);
 }
-
 @view-transition {
     navigation: auto;
 }
-
 .center {
     display: grid;
     place-content: center;
@@ -39,13 +36,11 @@ h1 {
 .text-align {
     text-align: center;
 }
-
 @keyframes adjust-header {
     100% {
         background-color: #152861;
     }
 } 
-
 /* HEADER */
 header {
     width: 100%;
@@ -104,7 +99,6 @@ header {
 .fa-heart {
     margin-right: .3rem;
 }
-
 /* BAR - MENU */
 .btn-menu {
     color: #fff;
@@ -113,8 +107,7 @@ header {
 .toggle-menu, .btn-menu {
     display: none;
 }
-
-/* hero */
+/* HERO */
 .hero {
     height: 100dvh;
     background: url(https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/69e0313781508f4b832408ad_0f2c5ee69d60911170a851c13913f3d8_Aniversario-11.avif) no-repeat;
@@ -194,7 +187,6 @@ header {
 .box-btn2 {
     margin-top: 1.2rem;
 }
-
 /* WELCOME */
 .welcome {
     background-color: #fff;
@@ -243,11 +235,9 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 4rem;
 }
-
 /* MINISTERIOS */
 .ministerios {
     padding-block: 5rem;
-    /* background-color: #1e3888; */
 }
 .color-title4 {
     color: #60cbff;
@@ -332,7 +322,6 @@ header {
 .icon-mar {
     margin-left: .4rem;
 }
-
 /* SERVICIOS */
 .servicios {
     padding-block: 5rem;
@@ -400,7 +389,6 @@ header {
 .normal {
     box-shadow: 0 0 10px #ccccccde;
 }
-
 /* GALERIA */
 .galeria {
     padding-block: 5rem;
@@ -436,7 +424,6 @@ header {
     object-fit: cover;
     transition: all .3s ease-in-out;
 }
-
 /* LISTO */
 .listo {
     padding-block: 5rem;
@@ -478,7 +465,6 @@ header {
         transform: translateY(-10%);
     }
 }
-
 /* FOOTER */
 .fot-img_logo {
     width: 7rem;
@@ -535,7 +521,6 @@ header {
     font-size: 15px;
     color: #e6e6e6;
 }
-
 /* DERECHOS */
 .fot-content {
     margin-bottom: 2rem;
@@ -556,7 +541,6 @@ header {
     #menu:checked ~ .enlaces {
         right: 0;
     }
-
     /* HEADER */
     .enlaces {
         flex-direction: column;
@@ -583,13 +567,11 @@ header {
     .img_logo {
         width: 7rem;
     }
-
     .btn-principal,
     .btn-secundario,
     .btn-secundario2 {
         width: 100%;
     }
-
     /* HERO */
     .box-btn {
         flex-direction: column;
@@ -602,12 +584,10 @@ header {
         position: relative;
         top: -12px;
     }
-
     /* WELCOME */
     .grid-template-column2 {
         gap: 2rem;
     }
-
     /* MINISTERIOS */
     .grid-template-column4 {
         gap: 2.3rem;
@@ -616,7 +596,6 @@ header {
         height: 100%;
         object-fit: cover;
     }
-
     /* GALERIA */
     .grid-template-column3 {
         gap: 2.3rem;
@@ -624,7 +603,6 @@ header {
     .box-img-gal  {
         height: 230px;
     }
-
     /* LISTO */
     .btn-listo {
         flex-direction: column;
