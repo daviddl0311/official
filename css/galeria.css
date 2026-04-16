@@ -157,6 +157,7 @@ header {
 .box-img {
     overflow: hidden;
     position: relative;
+    cursor: default;
     &:hover {
         .img-gal {
             scale: 1.1;
