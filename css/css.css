@@ -116,8 +116,8 @@ header {
 
 /* hero */
 .hero {
-    height: 100vh;
-    background: url(https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/69e0313781508f4b832408ad_21cbf4f3692a4691e9b5dcf58dc224ca_Aniversario-11.avif) no-repeat;
+    height: 100dvh;
+    background: url(https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/69e0313781508f4b832408ad_0f2c5ee69d60911170a851c13913f3d8_Aniversario-11.avif) no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
