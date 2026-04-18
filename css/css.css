@@ -540,7 +540,6 @@ header {
     font-size: 14px;
     border-top: 1px solid #fdfdfd23;
 }
-
 @media (width < 1200px) {
     /* MENU */
     .toogle-menu, .btn-menu {
@@ -574,7 +573,6 @@ header {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
 @media (width < 900px) {
     .img_logo {
         width: 7rem;

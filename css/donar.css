@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, black, #1e3888);
@@ -15,11 +14,9 @@ a {
 h1 {
     font-size: clamp(2.6rem, 3vw, 4rem);
 }
-
 @view-transition {
     navigation: auto;
 }
-
 .center {
     display: grid;
     place-content: center;
@@ -39,13 +36,11 @@ h1 {
 .text-align {
     text-align: center;
 }
-
 @keyframes adjust-header {
     100% {
         background-color: #152861;
     }
 }
-
 /* HEADER */
 header {
     top: 0;
@@ -105,7 +100,6 @@ header {
 .fa-heart {
     margin-right: .3rem;
 }
-
 /* BAR - MENU */
 .btn-menu {
     color: #fff;
@@ -114,7 +108,6 @@ header {
 .toggle-menu, .btn-menu {
     display: none;
 }
-
 /* DONAR */
 .donar {
     padding-block: 5rem;
@@ -139,7 +132,6 @@ header {
     color: #60cbff;
     font-size: 30px;
 }
-
 /* DONAR CUENTA */
 .donar-cuenta {
     padding-block: 5rem;
@@ -159,7 +151,6 @@ header {
     color: #e6e6e6;
     font-size: clamp(14px, 3vw, 16px);
 }
-
 /* BOX DONAR */
 .box-donar {
     margin-top: 4rem;
@@ -228,12 +219,10 @@ header {
     border-top: 1px solid #fdfdfd23;
     padding-top: 1rem;
 }
-
 input[type="text"] {
     background: transparent;
     font-family: 'Poppins', sans-serif;
 }
-
 /* KILO */
 .kilo {
     padding-block: 5rem;
@@ -286,7 +275,6 @@ input[type="text"] {
         background-color: #2e69fe25;
     }
 }
-
 /* FOOTER */
 .fot-img_logo {
     width: 7rem;
@@ -344,7 +332,6 @@ input[type="text"] {
     font-size: 15px;
     color: #e6e6e6;
 }
-
 /* DERECHOS */
 .fot-content {
     margin-bottom: 2rem;
@@ -356,7 +343,6 @@ input[type="text"] {
     font-size: 14px;
     border-top: 1px solid #fdfdfd23;
 }
-
 @media (width < 1200px) {
     /* MENU */
     .toogle-menu, .btn-menu {
@@ -397,12 +383,10 @@ input[type="text"] {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
 @media (width < 900px) {
     .img_logo {
         width: 7rem;
     }
-
     .btn-kilo {
         width: 100%;
     }

@@ -15,11 +15,9 @@ h1 {
     font-size: clamp(2.6rem, 3vw, 4rem);
     color: #fff;
 }
-
 @view-transition {
     navigation: auto;
 }
-
 .center {
     display: grid;
     place-content: center;
@@ -39,13 +37,11 @@ h1 {
 .text-align {
     text-align: center;
 }
-
 @keyframes adjust-header {
     100% {
         background-color: #152861;
     }
 } 
-
 /* HEADER */
 header {
     top: 0;
@@ -105,7 +101,6 @@ header {
 .fa-heart {
     margin-right: .3rem;
 }
-
 /* BAR - MENU */
 .btn-menu {
     color: #fff;
@@ -114,7 +109,6 @@ header {
 .toggle-menu, .btn-menu {
     display: none;
 }
-
 /* MINISTERIOS */
 .ministerios {
     padding-block: 5rem;
@@ -198,7 +192,6 @@ header {
     margin-left: .4rem;
     transition: all .3s ease-in-out;
 }
-
 /* FOOTER */
 .fot-img_logo {
     width: 7rem;
@@ -256,7 +249,6 @@ header {
     font-size: 15px;
     color: #e6e6e6;
 }
-
 /* DERECHOS */
 .fot-content {
     margin-bottom: 2rem;
@@ -282,7 +274,6 @@ header {
         overflow: hidden;
     }
 }
-
 @media (width < 1200px) {
     /* MENU */
     .toogle-menu, 
@@ -326,14 +317,12 @@ header {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
 @media (width < 1200px) {
     /* MINISTERIOS */
     .grid-template-column3 {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-
 @media (width < 900px) {
     .img_logo {
         width: 7rem;
