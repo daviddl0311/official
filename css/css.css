@@ -583,6 +583,11 @@ header {
         width: 100%;
     }
     /* HERO */
+    .hero {
+        background: url(https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/69e2d652c18a9b8d2bece90b_hero-small.avif) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
     .box-btn {
         flex-direction: column;
         width: 100%;
