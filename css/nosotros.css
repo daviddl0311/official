@@ -50,7 +50,9 @@ h1 {
 header {
     top: 0;
     z-index: 999;
+    display: grid;
     position: sticky;
+    place-content: center;
     padding-block: 1.2rem;
     animation: adjust-header linear both;
     animation-timeline: scroll();
@@ -229,6 +231,7 @@ header {
 /* FOOTER */
 .fot-img_logo {
     width: 7rem;
+    height: fit-content;
 }
 .footer {
     padding-block: 5rem;

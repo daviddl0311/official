@@ -289,6 +289,7 @@ input[type="text"] {
 /* FOOTER */
 .fot-img_logo {
     width: 7rem;
+    height: fit-content;
 }
 .footer {
     padding-block: 5rem;
