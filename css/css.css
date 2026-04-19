@@ -111,17 +111,20 @@ header {
 /* HERO */
 .hero {
     height: 100dvh;
-    background: url(https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/69e0313781508f4b832408ad_0f2c5ee69d60911170a851c13913f3d8_Aniversario-11.avif) no-repeat;
-    background-size: cover;
-    background-position: center;
     position: relative;
+}
+.img-hero {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
 }
 .hero::before {
     content: "";
     background: linear-gradient(-120deg, black, #0b2a86);
     opacity: .78;
     position: absolute;
-    z-index: 0;
+    z-index: 1;
     inset: 0;
 }
 .name-iglesia {
@@ -583,11 +586,11 @@ header {
         width: 100%;
     }
     /* HERO */
-    .hero {
+    /* .hero {
         background: url(https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/69e2d652c18a9b8d2bece90b_hero-small.avif) no-repeat;
         background-size: cover;
         background-position: center;
-    }
+    } */
     .box-btn {
         flex-direction: column;
         width: 100%;
