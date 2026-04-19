@@ -119,6 +119,10 @@ header {
     object-fit: cover;
     position: absolute;
 }
+.img-hero2 {
+    display: none;
+    position: absolute;
+}
 .hero::before {
     content: "";
     background: linear-gradient(-120deg, black, #0b2a86);
@@ -586,11 +590,15 @@ header {
         width: 100%;
     }
     /* HERO */
-    /* .hero {
-        background: url(https://cdn.prod.website-files.com/680d9cccfc716f3fc0f2ee3b/69e2d652c18a9b8d2bece90b_hero-small.avif) no-repeat;
-        background-size: cover;
-        background-position: center;
-    } */
+    .img-hero {
+        display: none;
+    }
+    .img-hero2 {
+        display: block;
+        width: 100%;
+        height: 100dvh;
+        object-fit: cover;
+    }
     .box-btn {
         flex-direction: column;
         width: 100%;
