@@ -303,7 +303,6 @@ header {
 
 @media(width < 500px) {
     .img-gal {
-        aspect-ratio: 0;
-        object-fit: fill;
+        aspect-ratio: 1/1;
     }
 }
