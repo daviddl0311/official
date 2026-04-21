@@ -4,9 +4,9 @@ let bloop = true;
 document.querySelector("#burger").addEventListener("click", () => {
     if(bloop) {
         bloop = false
-        document.querySelector("#burger").className = "fa-solid fa-xmark";
+        document.querySelector("#burger").innerHTML = '<i class="fa-solid fa-xmark"></i>';
     } else {
         bloop = true;
-        document.querySelector("#burger").className = "fa-solid fa-bars";
+        document.querySelector("#burger").innerHTML = '<i class="fa-solid fa-bars"></i>';
     }
 })
