@@ -2,19 +2,20 @@
 let lastDom = document.querySelector("#dom");
 let date = new Date();
 
-let arr = []
-let fecha = date.getDate();
+let arr = [];
+
 let index = date.getDay();
 
-for(let i = fecha; i <= 31; i++) {
+for(let i = 0; i <= 30; i++) {
     if(index == 0) {
         arr.push(i);
     }
+    console.log(index);
     
     index = (index + 1) % 7;
 }
 
-lastDom.textContent = `${Math.max(... arr)} de ${date.toLocaleDateString(undefined, {month: 'long'})} del ${date.getFullYear()}`;
+lastDom.textContent = date.getDate == Math.max(...arr) ? "Es hoy" : `${Math.max(... arr)} de ${date.toLocaleDateString(undefined, {month: 'long'})} del ${date.getFullYear()}`;
 
 // Copy
 document.querySelector("#copy").addEventListener("click", () => {
