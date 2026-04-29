@@ -196,12 +196,12 @@ header {
 }
 .title {
     color: #000;
-    text-align-last: right;
+    text-align: right;
     font-size: clamp(18px, 3vw, 22px);
 }
 .title2 {
     color: #000;
-    text-align-last: left;
+    text-align: left;
     font-size: clamp(18px, 3vw, 22px);
 }
 .text {

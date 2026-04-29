@@ -140,7 +140,7 @@ header {
     cursor: default;
     transition: all .3s ease-in-out;
     &:hover {
-        transform: translateY(-5%);
+        transform: translateY(-4%);
     }
 }
 .item-border {

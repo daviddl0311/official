@@ -181,7 +181,7 @@ header {
 }
 .grid-template-column3 {
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.2rem;
+    gap: 2.3rem;
 }
 .enlace-info {
     font-size: 15px;
