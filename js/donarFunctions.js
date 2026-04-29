@@ -2,20 +2,20 @@
 let lastDom = document.querySelector("#dom");
 let date = new Date();
 
-let arr = [];
+function obtenerUltimoDomingo(year, month) {
+    let lastDate = new Date(year, month + 1, 0);
 
-let index = date.getDay();
+    const diaSemana = lastDate.getDay();
 
-for(let i = 0; i <= 30; i++) {
-    if(index == 0) {
-        arr.push(i);
-    }
-    console.log(index);
-    
-    index = (index + 1) % 7;
+    const ultimoDomingo = new Date(lastDate);
+    ultimoDomingo.setDate(lastDate.getDate() - diaSemana);
+
+    return ultimoDomingo;
 }
 
-lastDom.textContent = date.getDate == Math.max(...arr) ? "Es hoy" : `${Math.max(... arr)} de ${date.toLocaleDateString(undefined, {month: 'long'})} del ${date.getFullYear()}`;
+const fecha = obtenerUltimoDomingo(date.getFullYear(), date.getMonth());
+
+lastDom.textContent = `${fecha.getDate()} de ${date.toLocaleDateString(undefined, {month: 'long'})} del ${date.getFullYear()}`;
 
 // Copy
 document.querySelector("#copy").addEventListener("click", () => {
